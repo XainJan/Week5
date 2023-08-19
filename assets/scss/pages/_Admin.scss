@@ -1,0 +1,10 @@
+
+.rotate{
+    transition: .3s;
+}
+.check-rotate:checked + .rotate{
+
+    transform: rotate(180deg);
+    
+}
+
