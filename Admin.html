@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">    <title>Admin</title>
+  <script type="module" crossorigin src="/Week5/assets/main-3767300b.js"></script>
+  <link rel="stylesheet" href="/Week5/assets/main-9742bf0a.css">
+</head>
+<body>
+    <div class="container-fluid px-0 d-flex">
+        <div class="side-nav bg-light py-8  d-flex flex-column justify-content-between">
+
+      <ul class="nav flex-column">
+        <li class="mb-7 nav-item" ><a class="nav-link" href="#"><img src="/Week5/assets/logo-ANSWER-a11e3fef.svg" alt=""></a></li>
+        <li class="fw-bolder fs-6 mb-6 nav-item"><a class="nav-link" href="#"><span class="align-middle material-icons me-3">assessment</span>Dashboard</a></li>
+        <li class="fw-bolder fs-6 mb-6 nav-item"><a class="nav-link" href="#"><span class="align-middle material-icons me-3">question_answer</span>Question</a></li>
+        <li class="fw-bolder fs-6 mb-6 nav-item"><a class="nav-link  " href="./index.html"><span class="align-middle material-icons me-3 ">assignment</span>Assignment</a></li>
+        <li class="fw-bolder fs-6 mb-6 nav-item"><a class="nav-link" href="#"><span class="align-middle material-icons me-3">video_library</span>Course</a></li>
+        <li class="fw-bolder fs-6 mb-6 nav-item"><a class="nav-link active" href="./Admin.html"><span class="align-middle material-icons me-3">people</span>Admin</a></li>
+        <li class="fw-bolder fs-6 mb-6 nav-item"><a class="nav-link" href="#"><span class="align-middle material-icons me-3">settings</span>Settings</a></li>
+        </ul>
+
+      <div class="user align-self-start d-flex align-items-center ps-8 ">
+        <img class="rounded-circle" src="/Week5/assets/photo-1514794749374-fb67509dbb7f-63ef4f5b.avif" alt="">
+        <ul class="my-0 ps-3">
+          <li class="fs-6 lh-base">Andy Chen</li>
+          <li class="fs-7 lh-base text-secondary">andy0401@mail.com</li>
+        </ul>
+      </div>
+  </div>        <div class="container mx-0 px-8" style="width:984px">
+            <div class="container mx-0 px-0 d-flex align-items-center mb-11 "  style="height: 92px;">
+              <h2 class="me-9 my-0 fs-4">Admin</h2>
+              <div class="dropdown d-flex align-items-center">
+                <span class="material-icons text-success">add</span><a class="fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Add New Admin</a>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content px-8">
+                        <div class="modal-header border-0 py-8 px-0">
+                          <h5 class="modal-title fs-4" id="staticBackdropLabel">New Admin</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body px-0">
+                          <h2 class="fs-5 mb-3">Account</h2>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label mb-1">Name</label>
+                            <input type="text" class="form-control rounded-0" id="exampleFormControlInput1">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label mb-1">Email</label>
+                            <input type="email" class="form-control rounded-0" id="exampleFormControlInput2">
+                          </div>
+                        </div>
+                        <div class="border-top py-3 ">
+                            <h2 class="fs-5 mb-4">Verification</h2>
+                            <p class="d-flex align-items-center fw-bold mb-4"><span class="material-icons text-danger me-2">warning</span>Unverified</p>
+                            <button class="btn btn-outline-success rounded-0 w-100 fw-bold py-3">Send Verification Mail</button>
+                        </div>
+                        <div class="border-top py-3 ">
+                            <h2 class="fs-5 mb-4">Access Level</h2>
+                            <select class="form-select rounded-0" aria-label="Default select example">
+                                <option selected>-Choose access level-</option>
+                                <option value="1">Admin</option>
+                              </select>
+                        </div>
+                        <div class="border-top py-3 mb-8 ">
+                            <h2 class="fs-5 mb-4">Custom Access</h2>
+                            <div class="form-chec mb-3">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault1">
+                                <label class="form-check-label" for="flexCheckDefault1">Lecture</label>
+                            </div>
+                            <div class="form-chec mb-3">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault2">
+                                <label class="form-check-label" for="flexCheckDefault2">Coupon</label>
+                            </div>
+                            <div class="form-chec mb-3">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault3">
+                                <label class="form-check-label" for="flexCheckDefault3">Message</label>
+                            </div>
+                            <div class="form-chec mb-3">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault4">
+                                <label class="form-check-label" for="flexCheckDefault4">Setting</label>
+                            </div>
+                            <div class="form-chec ">
+                                <input class="form-check-input me-2 outline-gray-900" type="checkbox" value="" id="flexCheckDefault5">
+                                <label class="form-check-label" for="flexCheckDefault5">Task Menu</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-top-0 px-0">
+                          <button type="button" class="btn btn-outline-success px-8 py-2" data-bs-dismiss="modal">Cancel</button>
+                          <button type="button px-" class="btn btn-success px-8 py-2">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <span class="material-icons ms-auto"><a href="#">search</a></span>
+              <span class="material-icons ms-10"><a href="#">notifications_active</a></span>
+        </div>
+        <div class="container px-0">
+            <table class="table">
+                <thead class="border-gray-900">
+                  <tr>
+                    <th class="d-flex align-items-center" scope="col">ID<span class="material-icons fs-6 ms-2 text-success">arrow_downward</span></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Verified</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">#1</th>
+                    <td>Emir Wicks</td>
+                    <td>emir.wicks@mail.com</td>
+                    <td cols="3">Yes</td>
+                    <td ><a class="mx-4 " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                        </a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                            </svg>
+                        </a>
+                    </td>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content rounded-0">
+                          <div class="modal-body d-flex px-8 py-8">
+                              <img style="width:141px; height:141px" src="/Week5/assets/emir-3d7a4b39.jpeg" alt="">
+                              <ul class="w-100 m-0">
+                                  <li class="d-flex justify-content-between">#1<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></li>
+                                  <li >Admin</li>
+                                  <li class="fs-4 fw-bold mb-1">Emir Wicks</li>
+                                  <li class="mb-3 text-dark fs-7">emir.wicks@mail.com</li>
+                                  <li class=" d-flex justify-content-between fs-8 align-items-center"><span class="bg-light">Verified</span><label  class="ro" for="arrow"><input class="check-rotate d-none" type="checkbox" id="arrow"><span style="cursor: pointer;" class="material-icons text-success rotate" data-bs-toggle="collapse" href="#collapseExample2" >keyboard_arrow_down</span></label></li>
+                              </ul>
+                          </div>
+                          <div class="modal-footer collapse border-top-0 pt-0 pb-8 px-8" id="collapseExample2">   
+                            <button type="button" class="btn btn-white btn-outline-danger px-8" data-bs-dismiss="modal">Deactivate</button>
+                            <button type="button" class="btn btn-success px-8">Edit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content px-8">
+                        <div class="modal-header border-0 py-8 px-0">
+                          <h5 class="modal-title fs-4" id="staticBackdropLabel">Edit Admin</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body px-0">
+                          <h2 class="fs-5 mb-3">Account</h2>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label mb-1">Name</label>
+                            <input type="text" class="form-control rounded-0 " id="exampleFormControlInput1" value="Emir Wicks" disabled>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label mb-1">Email</label>
+                            <input type="email" class="form-control rounded-0" id="exampleFormControlInput2" value="emir.wicks@mail.com" disabled>
+                          </div>
+                        </div>
+                        <div class="border-top py-3 ">
+                            <h2 class="fs-5 mb-4">Verification</h2>
+                            <p class="d-flex align-items-center fw-bold mb-4"><span class="material-icons text-success me-2">check_circle</span>Verified</p>
+                            <button class="btn btn-outline-gray-median rounded-0 w-100 py-3 fw-bold" disabled>Send Verification Mail</button>
+                        </div>
+                        <div class="border-top py-3 ">
+                            <h2 class="fs-5 mb-4">Access Level</h2>
+                            <select class="form-select rounded-0" aria-label="Default select example">
+                                <option >-Choose access level-</option>
+                                <option selected value="1">Admin</option>
+                              </select>
+                        </div>
+                        <div class="border-top py-3 mb-8 ">
+                            <h2 class="fs-5 mb-4">Custom Access</h2>
+                            <div class="form-chec mb-3">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault1">
+                                <label class="form-check-label" for="flexCheckDefault1">Lecture</label>
+                            </div>
+                            <div class="form-chec mb-3">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault2">
+                                <label class="form-check-label" for="flexCheckDefault2">Coupon</label>
+                            </div>
+                            <div class="form-chec mb-3">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault3">
+                                <label class="form-check-label" for="flexCheckDefault3">Message</label>
+                            </div>
+                            <div class="form-chec mb-3">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault4">
+                                <label class="form-check-label" for="flexCheckDefault4">Setting</label>
+                            </div>
+                            <div class="form-chec ">
+                                <input class="form-check-input me-2 outline-gray-900" type="checkbox" value="" id="flexCheckDefault5">
+                                <label class="form-check-label" for="flexCheckDefault5">Task Menu</label>
+                            </div>
+                        </div>
+                        <div class="border-top py-3 ">
+                          <h2 class="fs-5 mb-4">Custom Access</h2>
+                          <p class="d-flex align-items-center mb-4 text-danger"><span class="material-icons text-danger me-2">warning</span>This cannot be undone!</p>
+                          <button class="btn btn-outline-danger rounded-0 w-100 fw-bold py-3">Deactivate This Account</button>
+                        </div>
+                        <div class="modal-footer border-top-0 px-0">
+                          <button type="button" class="btn btn-outline-success px-8 py-2" data-bs-dismiss="modal">Cancel</button>
+                          <button type="button px-" class="btn btn-success px-8 py-2">Update</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>  
+
+
+                  </tr>
+                  <tr>
+                    <th scope="row">#2</th>
+                    <td>Zaina Goldsmith</td>
+                    <td>zaina.goldsmith@mail.com</td>
+                    <td>Yes</td>
+                     <td ><a class="mx-4" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                        </a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                            </svg>
+                        </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#3</th>
+                    <td>Mahima Lopez</td>
+                    <td>mahima.lopez@mail.com</td>
+                    <td>Yes</td>
+                     <td ><a class="mx-4" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                        </a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                            </svg>
+                        </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#4</th>
+                    <td>Pharrell Murray</td>
+                    <td>pharrell.murray@mail.com</td>
+                    <td>Yes</td>
+                     <td ><a class="mx-4" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                        </a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                            </svg>
+                        </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#5</th>
+                    <td>Annika Mcbride</td>
+                    <td>annika.mcbride@mail.com</td>
+                    <td>Yes</td>
+                     <td ><a class="mx-4" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                        </a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                            </svg>
+                        </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#6</th>
+                    <td>Fatimah Clark</td>
+                    <td>fatimah.clark@mail.com</td>
+                    <td>Yes</td>
+                     <td ><a class="mx-4" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                        </a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                            </svg>
+                        </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#7</th>
+                    <td>Klaudia Rhodes</td>
+                    <td>klaudia.rhodes@mail.com</td>
+                    <td>Yes</td>
+                     <td ><a class="mx-4" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                        </a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                            </svg>
+                        </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#8</th>
+                    <td>Tillie Lucero</td>
+                    <td>tillie.lucero@mail.com</td>
+                    <td>Yes</td>
+                     <td ><a class="mx-4" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                        </a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                            </svg>
+                        </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#9</th>
+                    <td>Sabrina Stephenson</td>
+                    <td>sabrina.stephenson@mail.com</td>
+                    <td>Yes</td>
+                     <td ><a class="mx-4" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                        </a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                            </svg>
+                        </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#10</th>
+                    <td>Annie Smith</td>
+                    <td>annie.smith@mail.com</td>
+                    <td>Yes</td>
+                     <td ><a class="mx-4" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                            </svg>
+                        </a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                            </svg>
+                        </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
